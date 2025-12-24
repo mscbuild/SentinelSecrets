@@ -113,7 +113,7 @@ pip install pytest
 pytest -v
 ~~~
 
-![SentinelSecrets Scan](https://github.com/yourname/sentinel-secrets/actions/workflows/sentinel.yml/badge.svg)
+![SentinelSecrets Scan](https://github.com/mscbuild/SentinelSecrets/actions/workflows/sentinel.yml/badge.svg)
 
 
 ### 📜 LICENSE (MIT)
