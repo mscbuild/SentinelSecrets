@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "🔍 SentinelSecrets: scanning for secrets..."
+python main.py --pre-commit
+if [ $? -ne 0 ]; then
+  echo "❌ Commit blocked due to secrets."
+  exit 1
+fi
