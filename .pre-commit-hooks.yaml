@@ -1,4 +1,4 @@
-- id: sentinel-secrets
+- id: sentinel-secrets-
   name: SentinelSecrets – Secret Scanner
   entry: python main.py --pre-commit
   language: system
