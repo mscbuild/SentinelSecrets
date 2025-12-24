@@ -75,8 +75,8 @@ http://localhost:8000/docs
 
 ## Installation
 ~~~bash
-git clone https://github.com/mscbuild/SentinelSecrets.git
-cd SentinelSecrets
+git clone https://github.com/mscbuild/sentinel-secrets-.git
+cd sentinel-secrets-
 pip install -r requirements.txt
 ~~~
 
@@ -113,7 +113,7 @@ pip install pytest
 pytest -v
 ~~~
 
-![SentinelSecrets Scan](https://github.com/mscbuild/SentinelSecrets/actions/workflows/sentinel.yml/badge.svg)
+![SentinelSecrets Scan](https://github.com/mscbuild/sentinel-secrets-/actions/workflows/sentinel.yml/badge.svg)
 
 
 ### 📜 LICENSE (MIT)
