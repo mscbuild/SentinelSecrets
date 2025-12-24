@@ -7,21 +7,12 @@ SECRET_PATTERNS = {
     "JWT": r"eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+",
     "Generic API Key": r"(?i)(api_key|secret|token)[\"']?\s*[:=]\s*[\"'][^\"']+"
 }
-
 ENTROPY_THRESHOLD = 4.5
 
-
 def scan_text(text: str, file_path: str = "") -> list:
-    """
-    Сканирует текст на наличие секретов по regex и энтропии.
-    Применяет правила игнорирования из .sentinelignore.
-    :param text: Текст для сканирования
-    :param file_path: Путь файла (для ignore)
-    :return: Список findings
-    """
     raw_findings = []
 
-    # Ищем по regex
+    # Regex scanning
     for name, pattern in SECRET_PATTERNS.items():
         for match in re.finditer(pattern, text):
             raw_findings.append({
@@ -31,7 +22,7 @@ def scan_text(text: str, file_path: str = "") -> list:
                 "file": file_path
             })
 
-    # Ищем по энтропии (случайные токены, пароли)
+    # High-entropy scanning
     for word in text.split():
         if shannon_entropy(word) > ENTROPY_THRESHOLD and len(word) > 20:
             raw_findings.append({
@@ -41,8 +32,7 @@ def scan_text(text: str, file_path: str = "") -> list:
                 "file": file_path
             })
 
-    # Фильтруем через .sentinelignore
+    # Apply ignore rules
     ignore = IgnoreRules()
-    findings = ignore.filter(raw_findings)
+    return ignore.filter(raw_findings)
 
-    return findings
