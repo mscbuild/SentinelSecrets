@@ -4,7 +4,6 @@ from sentinel.scanner import scan_text
 from sentinel.git_utils import get_staged_diff
 from sentinel.report import generate_json_report, generate_markdown_report
 
-
 def main():
     parser = argparse.ArgumentParser(description="SentinelSecrets - Secret Scanner")
     parser.add_argument("--file", help="Scan a specific file")
@@ -12,10 +11,8 @@ def main():
     parser.add_argument("--pre-commit", action="store_true", help="Run as pre-commit hook")
     parser.add_argument("--json", default="sentinel-report.json", help="JSON report output")
     parser.add_argument("--md", default="sentinel-report.md", help="Markdown report output")
-
     args = parser.parse_args()
 
-    # Получаем текст для сканирования
     if args.pre_commit:
         text = get_staged_diff()
         file_path = ""
@@ -30,10 +27,8 @@ def main():
         print("No input specified. Use --file, --stdin, or --pre-commit.")
         sys.exit(1)
 
-    # Сканируем
     findings = scan_text(text, file_path=file_path)
 
-    # Генерируем отчёты
     generate_json_report(findings, args.json)
     generate_markdown_report(findings, args.md)
 
@@ -50,7 +45,6 @@ def main():
     else:
         print("✅ No secrets found.")
         sys.exit(0)
-
 
 if __name__ == "__main__":
     main()
