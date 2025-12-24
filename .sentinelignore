@@ -1,14 +1,5 @@
-# Ignore by secret type
-type:JWT
+# Ignore high-entropy strings from tests
 type:High entropy string
-
-# Ignore by file path
 path:tests/
-path:examples/
-
-# Ignore specific value (hash or substring)
-value:AKIA_TEST_KEY
-value:dummy_secret
-
-# Ignore by regex
-regex:AKIA[0-9A-Z]{16}
+value:example_token
+regex:AKIA_TEST_KEY
