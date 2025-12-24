@@ -1,0 +1,7 @@
+- id: sentinel-secrets
+  name: SentinelSecrets – Secret Scanner
+  description: Scan staged files for secrets (API keys, tokens, passwords)
+  entry: python main.py --pre-commit
+  language: system
+  stages: [commit]
+  pass_filenames: false
