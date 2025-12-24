@@ -106,6 +106,13 @@ python main.py --file app.py
 
 - Supply chain attacks
 
+### 🧪 How to run tests
+
+~~~bash
+pip install pytest
+pytest -v
+~~~
+
 ### 📜 LICENSE (MIT)
 
 MIT License
