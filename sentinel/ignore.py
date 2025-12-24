@@ -44,3 +44,4 @@ class IgnoreRules:
     def filter(self, findings: List[Dict]) -> List[Dict]:
         return [f for f in findings if not self.is_ignored(f)]
 
+
