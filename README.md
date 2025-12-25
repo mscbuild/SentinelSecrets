@@ -55,6 +55,7 @@ sentinel-secrets/
 ├── .pre-commit-hooks.yaml
 ├── .pre-commit-config.yaml
 ├── main.py
+├── pyproject.toml
 ├── README.md
 ├── SECURITY.md
 ├── LICENSE
