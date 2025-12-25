@@ -5,7 +5,7 @@
 *🔐 Secret Scanner for CI/CD & Git Hooks*
 
 SentinelSecrets is an open-source tool for preventing secret leaks
-(API keys, tokens, passwords) in Git repositories and CI/CD.
+(API keys, tokens, passwords) in Git repositories and CI/CD.The project integrates directly into the development process via Git hooks, blocking a commit if a secret is detected in it.
 
 ### 🎯 Project Summary
 
