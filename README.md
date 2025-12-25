@@ -1,6 +1,14 @@
  ### 📦 Project name
 
  **SentinelSecrets**
+ ![](https://komarev.com/ghpvc/?username=mscbuild) 
+ ![](https://img.shields.io/github/license/mscbuild/sentinel-secrets-) 
+ ![](https://img.shields.io/github/languages/code-size/mscbuild/sentinel-secrets-)
+![](https://img.shields.io/badge/PRs-Welcome-green)
+![](https://img.shields.io/badge/code%20style-python-green)
+![](https://img.shields.io/github/stars/mscbuild)
+![](https://img.shields.io/badge/Topic-Github-lighred)
+![](https://img.shields.io/website?url=https://github.com/mscbuild)
 
 *🔐 Secret Scanner for CI/CD & Git Hooks*
 
