@@ -1,0 +1,46 @@
+### --- Python ---
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+### --- Environment and dependencies ---
+ 
+.venv/
+venv/
+env/
+ENV/
+bin/
+lib/
+include/
+
+### --- Secrets (Important!) ---
+# Exclude files that your scanner should check locally, but not in Git
+.env
+.env.local
+.env.*
+*.pem
+*.key
+certs/
+secrets.json
+
+### --- Development tools ---
+# IDE configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Scanner logs and reports
+*.log
+report.json
+report.md
+security-report.md
+
+### --- ОС ---
+.DS_Store
+Thumbs.db
