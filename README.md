@@ -113,10 +113,10 @@ pip install pytest
 pytest -v
 ~~~
 
-[!NOTE]  
+> [!NOTE]  
 > My project is lightweight, customizable to the company's internal formats, and written in pure Python for easy auditing.
 
-###🛡️ Security
+### 🛡️ Security
 
 This project is developed in compliance with the OWASP Code Review Guide.
 
