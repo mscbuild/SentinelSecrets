@@ -119,6 +119,17 @@ pip install pytest
 pytest -v
 ~~~
 
+### ℹ️ Short test summary info 
+ 
+~~~bash
+tests/test_scanner.py::test_detects_aws_key FAILED                 [ 33%]
+tests/test_scanner.py::test_detects_high_entropy_string FAILED     [ 66%] 
+tests/test_scanner.py::test_no_false_positive PASSED               [100%]
+======================== short test summary info ========================
+FAILED tests/test_scanner.py::test_detects_aws_key - assert False
+FAILED tests/test_scanner.py::test_detects_high_entropy_string - assert False
+~~~
+
 > [!NOTE]  
 > My project is lightweight, customizable to the company's internal formats, and written in pure Python for easy auditing.
 
