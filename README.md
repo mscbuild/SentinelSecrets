@@ -1,8 +1,5 @@
  ### 📦 Project name
 
- <img width="650" height="250" alt="SentinelSecrets" src="https://github.com/user-attachments/assets/7a529ac0-ca07-47a2-a0d0-fc84b4d351d2" />
-
-
  **SentinelSecrets**
 
 *🔐 Secret Scanner for CI/CD & Git Hooks*
